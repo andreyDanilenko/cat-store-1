@@ -1,0 +1,103 @@
+.card {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.card__img {
+  width: 100%;
+  height: 264px;
+  display: block;
+  object-fit: cover;
+}
+
+.card__content {
+  background-color: $c-bg-card;
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: start;
+  padding: 29px 29px 10px;
+}
+
+.card__info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+
+  font-size: 12px;
+  line-height: 15px;
+  text-align: start;
+
+  color: $c-font;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 26px;
+    background-color: $c-primary;
+    left: 29px;
+    top: 12px;
+  }
+}
+
+.card__param-value {
+  display: block;
+
+  &--accented {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card__param-name {
+  display: block;
+}
+
+.card__price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: start;
+
+  padding: 10px 29px 29px;
+}
+
+.card__button {
+  width: 100%;
+  border: none;
+  border-radius: 0 0 $border-radius $border-radius;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px;
+
+  background-color: $c-primary;
+  color: $c-bg;
+  cursor: pointer;
+
+  &--sold {
+    background-color: $c-secondary;
+    cursor: default;
+  }
+}
+
+.card__discount {
+  position: absolute;
+  padding: 9px 18px;
+  border-radius: $border-radius;
+  background-color: $c-accent;
+  font-size: 16px;
+  line-height: 20px;
+
+  top: 34px;
+  left: 39px;
+
+  color: $c-bg;
+}

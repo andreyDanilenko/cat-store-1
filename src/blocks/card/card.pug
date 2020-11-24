@@ -1,0 +1,29 @@
+mixin card(params)
+  .card
+    if (params.discount)
+      .card__discount= params.sale
+
+    img.card__img(src=params.imgLink alt=params.title)
+
+    .card__content
+      h3.card__title= params.name
+
+      .card__info
+        .card__info-item
+          span.card__param-value= params.color
+          span.card__param-name окрас
+        
+        .card__info-item
+          span.card__param-value.card__param-value--accented= params.age
+          span.card__param-name Возраст
+        
+        .card__info-item
+          span.card__param-value.card__param-value--accented= params.pawCount
+          span.card__param-name Кол-во лап
+
+      .card__price= params.price 
+           
+    if (params.sold)
+      .card__button.card__button--sold Продано
+    else
+      button.card__button Купить

@@ -1,0 +1,79 @@
+include /blocks/card/card
+
+-
+  const products = [
+    {
+      name: 'Кот полосатый',
+      age: '9 мес.',
+      color: 'Полосатый',
+      imgLink: '/assets/img/product-cat-1.jpg',
+      pawCount: '4',
+      price: '30 000 руб.',
+      sold: false,
+      discount: true,
+      sale: '-40%'
+    },
+    {
+      name: 'Кот полосатый',
+      age: '9 мес.',
+      color: 'Полосатый',
+      imgLink: '/assets/img/product-cat-2.jpg',
+      pawCount: '4',
+      price: '40 000 руб.',
+      sold: true,
+      discount: false,
+    },
+    {
+      name: 'Кот полосатый',
+      age: '9 мес.',
+      color: 'Полосатый',
+      imgLink: '/assets/img/product-cat-3.jpg',
+      pawCount: '4',
+      price: '20 000 руб.',
+      sold: false,
+      discount: false
+    },
+    {
+      name: 'Кот полосатый',
+      age: '9 мес.',
+      color: 'Полосатый',
+      imgLink: '/assets/img/product-cat-1.jpg',
+      pawCount: '4',
+      price: '25 000 руб.',
+      sold: false,
+      discount: false
+    },
+    {
+      name: 'Кот полосатый',
+      age: '9 мес.',
+      color: 'Полосатый',
+      imgLink: '/assets/img/product-cat-3.jpg',
+      pawCount: '4',
+      price: '30 000 руб.',
+      sold: false,
+      discount: true,
+      sale: '-40%'
+    },
+    {
+      name: 'Кот полосатый',
+      age: '9 мес.',
+      color: 'Полосатый',
+      imgLink: '/assets/img/product-cat-2.jpg',
+      pawCount: '4',
+      price: '10 000 руб.',
+      sold: true,
+      discount: false
+
+    }
+  ];
+
+
+
+
+mixin products()
+  .container
+    .products
+      each product in products
+        .products__item
+          +card(product)
+

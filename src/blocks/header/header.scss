@@ -1,0 +1,54 @@
+.page-header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.page-header-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 26px 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  color: $c-bg;
+}
+
+.page-header__img {
+  display: block;
+}
+
+.page-header__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.page-header__nav-item {
+  padding: 23px 0;
+  padding-right: 60px;
+}
+
+.page-header__info {
+  padding: 23px 0 0;
+}
+
+.page-header__info-phone {
+  display: block;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.page-header__info-text {
+  display: block;
+
+  font-size: 18px;
+  line-height: 22px;
+  text-align: end;
+}

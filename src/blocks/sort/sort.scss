@@ -1,0 +1,101 @@
+.sort {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 27px 50px;
+
+  @include sm {
+    max-width: 740px;
+  }
+
+  @include md {
+    max-width: 820px;
+  }
+
+  @include lg {
+    max-width: 1060px;
+  }
+
+  @include xl {
+    max-width: 1280px;
+  }
+}
+
+.sort__method {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sort__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.sort__method {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.sort__price {
+  position: relative;
+  margin-left: 48px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $c-font;
+    cursor: pointer;
+  }
+
+  &::before {
+    left: 63px;
+    top: 11px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    left: 70px;
+    top: 11px;
+    transform: rotate(-45deg);
+  }
+
+  @include md {
+    margin-left: 48px;
+  }
+}
+.sort__age {
+  position: relative;
+  margin-left: 48px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $c-font;
+    cursor: pointer;
+  }
+
+  &::before {
+    left: 110px;
+    top: 11px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    left: 117px;
+    top: 11px;
+    transform: rotate(45deg);
+  }
+
+  @include md {
+    margin-left: 84px;
+  }
+}

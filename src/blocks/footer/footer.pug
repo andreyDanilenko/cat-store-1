@@ -1,0 +1,14 @@
+mixin footer 
+  footer.page-footer
+    .page-footer-wrapper
+      .page-footer__text
+        h2.page-footer__title Успей купить!
+        p.page-footer__discription Подпишись и успей словить все акции
+      .subscription
+        form.subscription__form(action="post")
+          .subscription__inner
+            input.subscription__email(type="email" placeholder="Email" required)
+            button.subscription__button
+          .subscription__confirm
+            input.subscription__check(type="checkbox" id="news")
+            label.subscription__text(for="news") Подписаться на новости 

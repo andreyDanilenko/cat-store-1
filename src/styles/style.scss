@@ -1,0 +1,21 @@
+@import "variables/media.scss";
+@import "variables/grid.scss";
+@import "variables/colors.scss";
+@import "variables/typography.scss";
+@import "variables/other.scss";
+
+@import "global/fonts.scss";
+@import "global/reset.scss";
+@import "global/base.scss";
+
+@import "mixins/media.scss";
+@import "mixins/grid.scss";
+
+@import "../blocks/sort/sort.scss";
+@import "../blocks/container/container.scss";
+@import "../blocks/row/row.scss";
+@import "../blocks/card/card.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/products/products.scss";
+@import "../blocks/hero/hero.scss";
+

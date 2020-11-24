@@ -1,0 +1,23 @@
+.products {
+  @include row;
+  justify-content: center;
+}
+
+.products__item {
+  @include col;
+  margin-top: $grid-gutter;
+  margin-bottom: $grid-gutter;
+
+  @include sm {
+    @include col(3/4);
+  }
+
+  @include md {
+    @include col(1/2);
+  }
+
+  @include lg {
+    @include col(1/3);
+  }
+}
+
