@@ -1,24 +1,23 @@
 .container {
   margin: 0 auto;
   display: block;
-  box-sizing: content-box;
 
   padding-left: $grid-gutter;
   padding-right: $grid-gutter;
 
   @include sm {
-    max-width: 640px;
+    max-width: 640px + 2 * $grid-gutter;
   }
 
   @include md {
-    max-width: 720px;
+    max-width: 720px + 2 * $grid-gutter;
   }
 
   @include lg {
-    max-width: 960px;
+    max-width: 960px + 2 * $grid-gutter;
   }
 
   @include xl {
-    max-width: 1180px;
+    max-width: 1180px + 2 * $grid-gutter;
   }
 }
