@@ -7,24 +7,23 @@
 }
 
 .hero {
-  max-width: 1280px;
   margin: 0 auto;
   font-weight: bold;
   font-size: 38px;
   line-height: 46px;
-  padding: 480px 50px 76px;
+  padding: 480px 0 76px;
   color: $c-bg;
 
   @media (min-width: 350px) {
-    padding: 330px 50px 76px;
+    padding: 330px 0 76px;
   }
   @media (min-width: 560px) {
-    padding: 250px 50px 76px;
+    padding: 250px 0 76px;
   }
   @media (min-width: 640px) {
-    padding: 200px 50px 76px;
+    padding: 200px 0 76px;
   }
   @media (min-width: 860px) {
-    padding: 140px 50px 76px;
+    padding: 140px 0 76px;
   }
 }
