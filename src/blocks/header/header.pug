@@ -1,24 +1,25 @@
 mixin header
-  header.page-header
-    .page-header-wrapper
-      .page-header__logo 
-        img.page-header__img(src="/assets/img/logo.svg" alt="logo")
+  header.page-header(id="header")
+    .container
+      .page-header-wrapper
+        .page-header__logo 
+          img.page-header__img(src="/assets/img/logo.svg" alt="logo")
 
-      .page-header__nav
-        .page-header__nav-item
-          a.page-header__nav-link Main
+        .page-header__nav
+          .page-header__nav-item
+            a.page-header__nav-link(href="#") Main
 
-        .page-header__nav-item
-          a.page-header__nav-link Gallery
+          .page-header__nav-item
+            a.page-header__nav-link(href="#") Gallery
 
-        .page-header__nav-item
-          a.page-header__nav-link News
+          .page-header__nav-item
+            a.page-header__nav-link(href="#") News
 
-        .page-header__nav-item
-          a.page-header__nav-link Profile
+          .page-header__nav-item
+            a.page-header__nav-link(href="#") Profile
 
-      .page-header__info
-        span.page-header__info-phone +544 3490 00000
-        span.page-header__info-text Звони скорее!
+        .page-header__info
+          span.page-header__info-phone +544 3490 00000
+          span.page-header__info-text Звони скорее!
 
 
