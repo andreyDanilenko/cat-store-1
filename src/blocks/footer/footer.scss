@@ -1,0 +1,69 @@
+.footer {
+  background-color: $c-secondary;
+
+  @include md {
+    background-color: $c-bg;
+  }
+
+  &__wrapper {
+    margin: auto;
+    background-color: $c-secondary;
+    padding: 80px 80px 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__text {
+    max-width: 370px;
+    color: $c-bg;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 91.2%;
+  }
+
+  &__discription {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 91.2%;
+    margin-top: 26px;
+  }
+}
+
+// TODO: вынести в отдельный блок
+.subscription__email {
+  margin-right: 16px;
+  padding: 22px 33px;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: $grid-gutter;
+}
+
+.subscription__button {
+  border: none;
+  border-radius: $border-radius;
+  padding: 24px 75px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  background-color: $c-primary;
+  color: $c-bg;
+}
+
+.subscription__confirm {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.subscription__check {
+  color: $c-bg;
+}
+
+.subscription__label {
+  color: $c-bg;
+  margin-left: 16px;
+}
