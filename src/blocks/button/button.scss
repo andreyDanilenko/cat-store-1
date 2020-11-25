@@ -1,0 +1,46 @@
+.button {
+  border-radius: $border-radius;
+  font-size: 14px;
+  line-height: 17px;
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid $c-border;
+
+    padding: 24px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $c-border;
+    }
+  }
+}
+
+.button-scroll {
+  position: absolute;
+  border: none;
+  width: 59px;
+  height: 59px;
+  background-color: $c-primary;
+  opacity: 0.5;
+  cursor: pointer;
+  right: 1vw;
+  top: 70px;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-left: 3px solid $c-bg;
+    border-bottom: 3px solid $c-bg;
+    position: absolute;
+    right: 23px;
+    top: 25px;
+    transform: rotate(135deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
