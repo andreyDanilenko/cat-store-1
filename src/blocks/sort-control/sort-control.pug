@@ -1,0 +1,8 @@
+mixin sort-control(params)
+  button(
+    data-sort-key=params.sortKey
+    class=(
+      (params.direction ? `sort-control--${params.direction} ` : ' ') +
+      (params.sorted ? `sort-control--sorted` : '')
+    )
+  ).sort-control= params.text

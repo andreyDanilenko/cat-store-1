@@ -1,0 +1,40 @@
+.sort-control {
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  border: none;
+  background: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 28px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-left: 3px solid $c-font;
+    border-bottom: 3px solid $c-font;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transform-origin: 3px 7px;
+    transform: rotate(-45deg);
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 1;
+  }
+
+  &--down:after {
+    transform: rotate(-45deg);
+  }
+
+  &--up:after {
+    transform: rotate(135deg);
+  }
+
+  &--sorted:after {
+    opacity: 1;
+  }
+}

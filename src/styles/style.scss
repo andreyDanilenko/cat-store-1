@@ -11,6 +11,9 @@
 @import "mixins/media.scss";
 @import "mixins/grid.scss";
 
+@import "../blocks/button/button.scss";
+@import "../blocks/footer/footer.scss";
+@import "../blocks/sort-control/sort-control.scss";
 @import "../blocks/sort/sort.scss";
 @import "../blocks/container/container.scss";
 @import "../blocks/row/row.scss";

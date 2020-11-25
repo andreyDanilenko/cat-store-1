@@ -1,79 +1,84 @@
+include /blocks/scroll-button/scroll-button
 include /blocks/card/card
+
 
 -
   const products = [
     {
       name: 'Кот полосатый',
-      age: '9 мес.',
+      age: 9,
       color: 'Полосатый',
       imgLink: '/assets/img/product-cat-1.jpg',
-      pawCount: '4',
-      price: '30 000 руб.',
+      pawCount: 4,
+      price: 30000,
       sold: false,
       discount: true,
       sale: '-40%'
     },
     {
       name: 'Кот полосатый',
-      age: '9 мес.',
+      age: 12,
       color: 'Полосатый',
       imgLink: '/assets/img/product-cat-2.jpg',
-      pawCount: '4',
-      price: '40 000 руб.',
+      pawCount: 4,
+      price: 40000,
       sold: true,
       discount: false,
     },
     {
       name: 'Кот полосатый',
-      age: '9 мес.',
+      age: 14,
       color: 'Полосатый',
       imgLink: '/assets/img/product-cat-3.jpg',
-      pawCount: '4',
-      price: '20 000 руб.',
+      pawCount: 4,
+      price: 20000,
       sold: false,
       discount: false
     },
     {
       name: 'Кот полосатый',
-      age: '9 мес.',
+      age: 24,
       color: 'Полосатый',
       imgLink: '/assets/img/product-cat-1.jpg',
-      pawCount: '4',
-      price: '25 000 руб.',
+      pawCount: 4,
+      price: 25000,
       sold: false,
       discount: false
     },
     {
       name: 'Кот полосатый',
-      age: '9 мес.',
+      age: 27,
       color: 'Полосатый',
       imgLink: '/assets/img/product-cat-3.jpg',
-      pawCount: '4',
-      price: '30 000 руб.',
+      pawCount: 4,
+      price: 30000,
       sold: false,
       discount: true,
       sale: '-40%'
     },
     {
       name: 'Кот полосатый',
-      age: '9 мес.',
+      age: 9,
       color: 'Полосатый',
       imgLink: '/assets/img/product-cat-2.jpg',
-      pawCount: '4',
-      price: '10 000 руб.',
+      pawCount: 4,
+      price: 10000,
       sold: true,
-      discount: false
-
+      discount: false,
     }
   ];
 
-
-
-
 mixin products()
-  .container
-    .products
+  .container.products
+    .products__row
       each product in products
         .products__item
           +card(product)
+    .products__show-more-row
+      .products__show-more-col
+        button.button.button--transparent.products__show-more-button Показать еще 20
+        +scroll-button()
+
+
+
 

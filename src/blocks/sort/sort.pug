@@ -1,6 +1,20 @@
+include /blocks/sort-control/sort-control
+
 mixin sort ()
-  .sort 
-    .sort__title Сортировать по:
-    .sort__method    
-      .sort__price Цене
-      .sort__age Возрасту
+  .sort
+    .container
+      .sort__wrapper
+        .sort__title Сортировать по:
+        .sort__controls 
+          +sort-control({
+            text: 'Цене',
+            sortKey: 'price',
+            direction: 'down'
+
+          })  
+          +sort-control({
+            text: 'Возрасту',
+            sortKey: 'age',
+            direction: 'down'
+
+          })
