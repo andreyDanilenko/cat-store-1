@@ -28,6 +28,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
+  padding-right: 29px;
 
   font-size: 12px;
   line-height: 15px;
@@ -51,8 +52,11 @@
 
   &--accented {
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+
+    @include xl {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -82,7 +86,11 @@
   color: $c-bg;
   cursor: pointer;
 
-  &--sold {
+  &:hover {
+    background-color: $c-primary-dark;
+  }
+
+  &--sold, &--sold:hover {
     background-color: $c-secondary;
     cursor: default;
   }

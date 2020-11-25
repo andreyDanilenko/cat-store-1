@@ -1,5 +1,33 @@
+-
+  function formatPrice(price) {
+    return String(price)
+      .split('')
+      .reduceRight((acc, cur, i) => {
+        let str = cur + acc;
+        if (!((i + 1) % 3)) str = ' ' + str;
+        return str;
+      }, '');
+  }
+
+  function formatAge(totalMonths) {
+    const MONTHS_IN_YEAR = 12;
+
+    const years = Math.floor(totalMonths / MONTHS_IN_YEAR);
+    const months = totalMonths % MONTHS_IN_YEAR;
+
+    let str = '';
+
+    if (years) str += `${years} г. `;
+    if (months) str += `${months} мес.`;
+
+    return str;
+  }
+
 mixin card(params)
-  .card
+  .card(
+    data-price=params.price
+    data-age=params.age
+  )
     if (params.discount)
       .card__discount= params.sale
 
@@ -14,14 +42,14 @@ mixin card(params)
           span.card__param-name окрас
         
         .card__info-item
-          span.card__param-value.card__param-value--accented= params.age
+          span.card__param-value.card__param-value--accented= formatAge(params.age)
           span.card__param-name Возраст
         
         .card__info-item
           span.card__param-value.card__param-value--accented= params.pawCount
           span.card__param-name Кол-во лап
 
-      .card__price= params.price 
+      .card__price #{formatPrice(params.price)} руб. 
            
     if (params.sold)
       .card__button.card__button--sold Продано
