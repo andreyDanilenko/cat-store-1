@@ -186,7 +186,7 @@ svg {
     transform-origin: 3px 7px;
     transform: rotate(-45deg);
     transition: transform 0.2s, opacity 0.2s;
-    opacity: 0; }
+    opacity: 1; }
   .sort-control--down:after {
     transform: rotate(-45deg); }
   .sort-control--up:after {

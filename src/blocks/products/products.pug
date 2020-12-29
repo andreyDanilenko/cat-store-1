@@ -70,7 +70,7 @@ include /blocks/card/card
 
 mixin products()
   .container.products
-    .products__row
+    #products-row.products__row
       each product in products
         .products__item
           +card(product)
